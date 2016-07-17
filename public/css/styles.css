@@ -32,10 +32,10 @@ body,
 	height: 100%;
 }
 #chat-page .well {
-	height: 50%;
+	height: 70%;
 }
 .messages-container {
-	max-height: 400px;
+	height: 80%;
 	overflow-y: scroll;
 }
 .list-group-item {

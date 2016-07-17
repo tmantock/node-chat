@@ -3,7 +3,7 @@ var room = getQueryVariable('room');
 var socket = io();
 
 // Update h1 tag
-j$('.room-title').text(room);
+$('.room-title').text(room);
 
 socket.on('connect', function () {
 	console.log('Conncted to socket.io server!');
