@@ -11,3 +11,7 @@ This application features the ability to create private chat rooms.
 There is also a command that allows users to see everyone who is currently in the room. Simply type @currentUsers and the list of current users will appear in a message to the user who requested it.
 
 Bootstrap Paper was used to give the application it's flat design.
+
+Start chatting now!
+
+## [See Live Demo](https://tm-node-chat.herokuapp.com/)
