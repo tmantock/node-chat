@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta charset="UTF-8">
+		<title>Node | Socket Chat</title>
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/styles.css">
+	</head>
+	<body id="join-page">
+		<div class="vertical-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-md-offset-4 well">
+						<h1 class="text-center">Join Chat</h1>
+
+						<form action="/chat.html">
+							<div class="form-group">
+								<label>Display Name</label>
+								<div class="input-group">
+									<span class="input-group-addon">
+										<i class="glyphicon glyphicon-user"></i>
+									</span>
+									<input type="text" name="name" placeholder="Enter your username" class="form-control" autocomplete="off">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label>Room Name</label>
+								<div class="input-group">
+									<span class="input-group-addon">
+										<i class="glyphicon glyphicon-comment"></i>
+									</span>
+									<input type="text" name="room" placeholder="Enter the room name" class="form-control" autocomplete="off">
+								</div>
+							</div>
+
+							<div class="form-group join-button">
+								<input type="submit" value="Join Chat" class="btn btn-info btn-block"/>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
