@@ -34,10 +34,24 @@ $form.on('submit', function (event) {
 
 	var $message = $form.find('input[name=message]');
 
-	socket.emit('message', {
-		name: name,
-		text: $message.val()
-	});
+	if(textRegex($message.val())){
+		$('.text-help').html("");
+		socket.emit('message', {
+			name: name,
+			text: $message.val()
+		});
 
-	$message.val('');
+		$message.val('');
+	} else {
+		$('.text-help').html("Please enter a valid message");
+	}
+
+	
 });
+
+function textRegex (string) {
+	var exp = /^[a-z 0-9 ,.'%$#@!"&-]+$/i;
+	var test = exp.test(string);
+	console.log(test);
+	return test;
+}
